@@ -1,0 +1,85 @@
+.textPreviewContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 581px;
+  height: 399px;
+  /* Fixed height for the modal container */
+  background: var(--secondaryWhiteColor);
+  padding: 30px 15px 30px 30px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  /* Align content vertically */
+}
+
+.videoPreviewContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(260px, 35vw, 600px);
+  padding: 20px;
+  background: var(--primaryBgColor);
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.textPreviewContent {
+  padding-right: 20px;
+  padding-top: 25px;
+  font-family: "Mulish";
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.01em;
+  color: var(--primaryBgColor);
+
+  max-height: 399px;
+  /* Set a maximum height for the text */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+/* Optional: Custom scrollbar styling */
+.textPreviewContent::-webkit-scrollbar {
+  width: 5px;
+}
+
+.textPreviewContent::-webkit-scrollbar-thumb {
+  background-color: var(--secondaryWhiteHover);
+  border-radius: 10px;
+}
+
+.textPreviewContent::-webkit-scrollbar-track {
+  background-color: var(--secondaryWhiteColor);
+}
+
+@media (max-width: 650px) {
+  .textPreviewContainer {
+    width: 260px;
+    height: 386px;
+    padding: 29px 10px 20px 30px;
+  }
+
+  .textPreviewContent {
+    padding-right: 8px;
+    padding-top: 19px;
+    font-size: 12px;
+    line-height: 16.8px;
+    max-height: 386px;
+  }
+
+  .textPreviewContent::-webkit-scrollbar {
+    width: 3px;
+  }
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--secondaryWhiteColor);
+  cursor: pointer;
+}

@@ -1,0 +1,251 @@
+.caseTitleWrapper {
+  width: 40%;
+}
+
+.caseTitle {
+  margin-bottom: 20px;
+  font-family: "Russo One";
+  font-size: 30px;
+  line-height: 36.15px;
+  letter-spacing: -0.03em;
+  color: var(--secondaryWhiteColor);
+}
+
+.caseTopSection {
+  display: grid;
+  gap: 40px;
+}
+
+.caseTopGap {
+  gap: clamp(16px, 5vw, 20px);
+  display: grid;
+}
+
+.caseTopItem {
+  width: 55%;
+}
+
+.previewImage {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 300px;
+  object-fit: contain;
+}
+
+.tagBoxWrapper p {
+  width: 122px;
+  margin-right: 38px;
+}
+
+.tagBoxItem {
+  margin-right: 5px;
+}
+
+.eventImg {
+  display: block;
+  width: clamp(123px, 38vw, 406px);
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: clamp(10px, 5vw, 30px);
+}
+
+.caseEventTagSection {
+  display: grid;
+  gap: 30px;
+  margin: clamp(40px, 10vw, 90px) 0 clamp(60px, 10vw, 90px) 0;
+}
+
+.EventSwiper {
+  width: 100%;
+  height: clamp(80px, 20vw, 300px);
+  margin: 20px auto;
+}
+
+.custom-prev,
+.custom-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: block;
+}
+
+.custom-prev {
+  left: -40px;
+}
+
+.custom-next {
+  right: -40px;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: #555;
+}
+
+.cristalRoomWrapper {
+  padding: clamp(40px, 10vw, 60px) 0;
+  border-top: 1px solid var(--darkTextColor);
+  border-bottom: 1px solid var(--darkTextColor);
+}
+
+.cristalLeft {
+  background: white;
+  width: 360px;
+  height: 213px;
+  border-radius: 10px;
+}
+
+.cristalLeft img,
+video {
+  width: 205px;
+  height: 151px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cristalRight {
+  width: 760px;
+  padding-left: 40px;
+}
+
+.cristalItem1,
+.cristalItem2 {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cristalItem2Text {
+  font-family: "Mulish";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.08px;
+  letter-spacing: -0.01em;
+  color: var(--secondaryWhiteColor);
+}
+
+.caseEvent1 {
+  color: var(--secondaryWhiteColor);
+  display: grid;
+  gap: clamp(70px, 7vw, 65px);
+}
+
+.caseEvent1 img {
+  width: 100%;
+  border-radius: 10px;
+  height: clamp(170px, 24vw, 338px);
+  object-fit: cover;
+}
+
+
+@media (max-width: 620px) {
+
+  .caseCardImg {
+    width: 48% !important;
+    max-height: 140px
+  }
+
+
+  .caseCardImg img {
+    object-fit: cover;
+    height: clamp(90px, 22vw, 140px);
+    border-radius: 10px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .firstImage {
+    display: none;
+  }
+}
+
+
+@media (min-width: 501px) {
+  .secondImage {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .cristalRoomWrapper {
+    flex-direction: column;
+  }
+
+  .cristalRight {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 1150px) {
+  .caseTopItem {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .caseTitleWrapper {
+    width: 100%;
+  }
+
+  .caseTopWrapper {
+    flex-direction: column;
+  }
+
+  .cristalItem1,
+  .cristalItem2 {
+    height: 143px;
+  }
+}
+
+@media(max-width: 920px) {
+  .tagBoxWrapper p {
+    margin: 0 0 20px 0;
+  }
+
+  .tagBoxWrapper {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .tagBoxItem {
+    margin-top: 5px;
+  }
+}
+
+@media(max-width:775px) {
+
+  .custom-next,
+  .custom-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 631px) {
+  .cristalItem2 {
+    height: 130px;
+    margin-top: 30px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media(max-width: 581px) {
+
+  .cristalLeft {
+    width: 299px;
+    height: 213px;
+  }
+}
+
+@media(max-width: 500px) {
+  .caseTopItem {
+    margin: 40px 0px;
+  }
+}

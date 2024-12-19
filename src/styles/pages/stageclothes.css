@@ -1,0 +1,171 @@
+.coveringVideo {
+  width: 100% !important;
+  height: clamp(210px, 40vw, 483px);
+  border-radius: 10px;
+}
+
+.kabukiVideo {
+  width: 640px;
+  height: 544px;
+  border-radius: 10px;
+}
+
+.coveringPlay {
+  width: clamp(44px, 9vw, 112px);
+  height: clamp(57px, 9vw, 118px);
+  cursor: pointer;
+}
+
+.kabukiPlay {
+  width: clamp(48px, 5vw, 112px);
+  height: clamp(57px, 5vw, 129px);
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  cursor: pointer;
+}
+
+.kabukiList {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 21px;
+  background: var(--secondaryWhiteColor);
+  border-radius: 10px;
+  padding: clamp(30px, 4vw, 40px);
+  box-sizing: border-box;
+  flex: 1 1 auto;
+}
+
+.coveringGap {
+  margin: clamp(24px, 5vw, 48px) 0 clamp(24px, 5vw, 30px) 0;
+}
+
+.slidingHr {
+  border: 1px solid #CFCFCF;
+  margin: 20px 0;
+}
+
+.kabukiBody {
+  display: grid;
+  gap: 20px;
+}
+
+.kabukiImg {
+  width: clamp(145px, 20vw, 274px);
+  height: clamp(105px, 15vw, 200px);
+}
+
+.kabukiBottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: clamp(30px, 5vw, 40px);
+  background: var(--secondaryWhiteColor);
+  border-radius: 12px;
+}
+
+.kabukiBottomLeft,
+.kabukiBottomRight {
+  width: 534px;
+  flex: 1 1 auto;
+  border-radius: 10px;
+}
+
+.kabukiBottomRight {
+  padding: clamp(20px, 3vw, 30px);
+  box-sizing: border-box;
+  background: var(--badgeBgColor);
+  gap: 13px;
+  display: grid;
+}
+
+.transCurtain .auditoriumRight {
+  width: 34.59%;
+  max-width: 402px;
+}
+
+.transCurtainGallery {
+  width: 57.05%;
+}
+
+.curtainGallery {
+  gap: clamp(7.5px, 2vw, 20px)
+}
+
+.curtainGallery img {
+  width: clamp(116.2px, 20vw, 321px);
+  height: clamp(84px, 15vw, 242px);
+  border-radius: 5px;
+  object-fit: cover;
+  flex: 1 1 auto;
+}
+
+@media (max-width: 1417px) {
+
+  .kabukiList {
+    width: 80%;
+  }
+}
+
+@media(max-width:1330px) {
+
+  .auditoriumLeft video {
+    width: 100%;
+  }
+
+  .kabukiVideo {
+    width: clamp(300px, 40vw, 640px);
+    height: clamp(210px, 30vw, 544px);
+    border-radius: 10px;
+  }
+
+  .coveringBtn {
+    display: none;
+  }
+
+  .kabukiBottom {
+    flex-direction: column;
+  }
+
+  .kabukiBottomLeft,
+  .kabukiBottomRight {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1280px) {
+
+  .transCurtain .auditoriumRight,
+  .curtainGallery {
+    width: 80%;
+    max-width: 100%;
+  }
+
+  .transCurtainGallery {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .chichaShow .transCurtainGallery {
+    padding-top: 40px;
+  }
+
+  .chichaHidden .curtainGallery {
+    width: 100%;
+  }
+
+  .chichaHidden .curtainGallery img {
+    width: 48%;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .coveringTextBody,
+  .kabukiList {
+    width: 100%;
+  }
+}

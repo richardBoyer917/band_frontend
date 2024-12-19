@@ -1,0 +1,79 @@
+.casesTopic {
+  display: flex;
+  justify-content: left;
+  padding: 55px 20px 10px 0;
+  gap: 30px;
+}
+
+.caseCatalogContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(50px, 5vw, 115px);
+
+
+}
+
+.caseCatalogCardContainer {
+  padding-top: 14px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.moreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: clamp(75px, 5vw, 90px);
+}
+
+.slideNumber {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.08px;
+  letter-spacing: -0.01em;
+  color: var(--secondaryWhiteColor);
+}
+
+@media (max-width: 1350px) {
+  .caseCatalogCardContainer {
+    padding-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+
+  }
+}
+
+@media (max-width: 1025px) {
+  .caseCatalogCardContainer {
+    padding-top: 14px;
+    display: grid;
+    gap: 20px;
+
+  }
+}
+
+@media (max-width: 905px) {
+  .caseCatalogCardContainer {
+    padding-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .caseCatalogContainer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 720px) {
+  .caseCatalogCardContainer {
+    padding-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}

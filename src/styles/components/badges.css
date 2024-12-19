@@ -1,0 +1,74 @@
+.cardViewNumber {
+  position: absolute;
+  width: 75px;
+  height: 23px;
+  background-color: var(--badgeBgColor);
+  right: 16px;
+  top: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardViewNumber img {
+  height: 11px;
+  width: 11px !important;
+}
+
+.permissionBadge {
+  background-color: #E2E2E2;
+  box-sizing: border-box;
+  padding: 1px 7px;
+  margin-right: 10px;
+  border-radius: 14px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.57px;
+  letter-spacing: -0.01em;
+}
+
+.cardBadge {
+  background-color: var(--badgeBgColor);
+  font-size: clamp(10px, 1vw, 12px);
+  padding: 2.5px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+}
+
+.caseCatalogCardBadgeButton {
+  cursor: pointer;
+  padding: 5px 10px;
+  width: fit-content;
+  margin: 5px;
+  background-color: rgba(239, 239, 239, 0.13);
+  /* Transparent */
+  backdrop-filter: blur(2.5px);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 12px;
+}
+
+.userCardNumber {
+  width: 50px;
+  height: 23px;
+  border-radius: 2px;
+  background-color: var(--badgeBgColor);
+}
+
+.userCardNumber p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.06px;
+  letter-spacing: -0.03em;
+  color: var(--primaryBgColor);
+}
+
+.userCardText {
+  font-family: "Mulish";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.08px;
+  letter-spacing: -0.01em;
+  color: var(--secondaryWhiteColor);
+}

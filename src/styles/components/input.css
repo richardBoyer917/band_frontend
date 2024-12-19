@@ -1,0 +1,154 @@
+.InputText {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+
+.textArea {
+  width: 100%;
+  height: 157px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+/* Container for the search bar */
+
+.searchSquare {
+  width: 100%;
+  height: 50px;
+  padding: 16px clamp(12px, 3vw, 15px);
+  gap: 10px;
+  border-radius: 5px;
+  border: 1px solid #b0b0b0;
+  box-sizing: border-box;
+  margin-top: 25px;
+}
+
+.searchSquare img {
+  cursor: pointer;
+}
+
+.searchInput,
+.searchInput:active {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #b0b0b0;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-select select,
+.custom-select select:active {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.custom-select::after {
+  position: absolute;
+  content: "";
+  height: 6px;
+  top: 60%;
+  right: 10px;
+  pointer-events: none;
+  font-size: 14px;
+  color: #333;
+  border-left: 5.5px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-top: 6px solid #333;
+  /* Arrow color */
+}
+
+.selectBox {
+  width: 100%;
+  height: 45px;
+  padding: 10px 15px;
+  margin-top: 17px;
+  gap: 6px;
+  background: var(--secondaryWhiteColor);
+  border-radius: 3px;
+}
+
+.newCaseSelect{
+  width: 190px;
+  height: 50px;
+  background-color: rgba(239, 239, 239, 1);
+}
+
+.selectBoxSquare {
+  width: 33.1%;
+}
+
+.caseImageSquare {
+  padding-top: 35px;
+  width: 56.79%;
+}
+
+.captcha {
+  cursor: default;
+}
+
+.captcha p {
+  color: #4f6167;
+}
+
+.recaptcha {
+  color: #35a3de;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+
+.newCaseTop{
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #efefef;
+}
+
+.newCaseType{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40.16px;
+  letter-spacing: -0.01em;
+  margin: 40px 0;
+}
+
+@media (max-width: 1080px) {
+  .selectBoxSquare,
+  .caseImageSquare {
+    width: 100%;
+  }
+}
+
+@media (max-width: 967px){
+  .newCaseTop{
+    flex-direction: column;
+  }
+
+  .newCaseSelect{
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .caseImageSquare {
+    gap: 30px !important;
+  }
+}

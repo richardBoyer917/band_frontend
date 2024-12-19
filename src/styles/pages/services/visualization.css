@@ -1,0 +1,143 @@
+.processItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-top: clamp(40px, 10vw, 60px);
+}
+
+.processItem .cardDescription {
+  max-width: 350px;
+}
+
+.pdfText {
+  font-family: "Inter";
+  font-size: 14px;
+  color: #777777;
+  letter-spacing: -0.03em;
+  line-height: 19.6px;
+  margin-left: 13px;
+}
+
+.ArrowLine {
+  width: 85px;
+  border-width: 2px;
+}
+
+.ArrowRect {
+  width: 7px;
+  height: 7px;
+  background: black;
+  rotate: 50deg;
+}
+
+.arrowShow {
+  display: flex;
+}
+
+.verticalBorder {
+  display: none;
+  position: absolute;
+  right: 0;
+  border-right: 2px solid black;
+}
+
+/* ExampleCase */
+
+.caseLeftSection {
+  width: 40.6%;
+}
+
+.caseLeftSection video {
+  width: 472px;
+  max-width: 100%;
+  height: clamp(300px, 40vw, 455px);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.caseRightSection {
+  width: 56.7%;
+  gap: 28px;
+}
+
+.caseRightSection video {
+  width: 315px;
+  max-width: 100%;
+  height: 181px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.caseImgTitle {
+  margin: 18px 0 8px 0;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.08px;
+  letter-spacing: -0.01em;
+  color: var(--secondaryWhiteColor);
+}
+
+.caseImgText {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.06px;
+  letter-spacing: -0.03em;
+  color: var(--secondaryWhiteColor);
+}
+
+@media (max-width: 1430px) {
+  .caseRightSection,
+  .caseLeftSection {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1430px) {
+  .arrowShow {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1140px) {
+  .workProcessSquare {
+    justify-content: space-around !important;
+  }
+
+  .caseImgTitle,
+  .caseImgText {
+    display: none;
+  }
+}
+
+@media (max-width: 636px) {
+  .workProcessSquare {
+    justify-content: space-between !important;
+  }
+
+  .downloadBtnWrap {
+    align-items: flex-start !important;
+    flex-direction: column;
+  }
+
+  .pdfText {
+    margin: 20px 0 0 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .processItem {
+    flex: 1 1 auto;
+    transition: flex-basis 0.5s ease;
+  }
+
+  .verticalBorder {
+    display: flex;
+  }
+
+  .processItem .cardDescription {
+    width: 221px;
+    letter-spacing: -0.03em;
+  }
+}

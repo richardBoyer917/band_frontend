@@ -1,0 +1,80 @@
+.bigVideoSquare {
+  position: relative;
+  width: 100% !important;
+  max-height: 714px;
+  object-fit: cover;
+  border-radius: clamp(5px, 1vw, 10px);
+}
+
+.bigVideoSquare video,
+.bigVideoSquare img {
+  border-radius: clamp(5px, 1vw, 10px);
+  object-fit: cover;
+}
+
+.bigVideoSquare video {
+  height: clamp(210px, 50vw, 714px);
+}
+
+.bigPlayIcon {
+  position: absolute;
+  width: clamp(48px, 9vw, 100px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.bigVideoSquareFooter {
+  padding: clamp(30px, 3.5vw, 40px) 63px 0 63px;
+  color: var(--secondaryWhiteColor);
+}
+
+.sectionHeaderTitleSquare {
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondaryWhiteColor);
+}
+
+.caseEventTab {
+  height: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  background: var(--secondaryWhiteColor);
+}
+
+.adminDirectoryEdit {
+  cursor: pointer;
+  display: none !important;
+  transition: 0.5s !important;
+}
+
+.MuiDataGrid-row:hover .adminDirectoryEdit {
+  display: flex !important;
+  transition: 0.5s !important;
+}
+
+@media screen and (max-width: 768px) {
+  .bigVideoSquareFooter {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bigVideoSquare {
+    height: 210px;
+  }
+
+  .sectionHeaderTitleSquare .x18font_2 {
+    padding-bottom: 26px;
+  }
+
+  .bigVideoSquareFooter .x24Font_2 {
+    display: none;
+  }
+}

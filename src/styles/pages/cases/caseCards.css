@@ -1,0 +1,42 @@
+.caseEvent1 {
+    color: var(--secondaryWhiteColor);
+    display: grid;
+    gap: clamp(70px, 7vw, 65px);
+}
+
+.caseEvent1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 620px) {
+
+    .caseCardImg {
+        width: 48% !important;
+        max-height: 140px
+    }
+
+
+    .caseCardImg img {
+        object-fit: cover;
+        height: clamp(90px, 22vw, 140px);
+        border-radius: 10px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .firstImage {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 501px) {
+    .secondImage {
+        display: none;
+
+    }
+}

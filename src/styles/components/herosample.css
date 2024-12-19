@@ -1,0 +1,153 @@
+.heroBg {
+  position: relative;
+}
+
+.heroBg img {
+  position: absolute;
+  top: -20px;
+  right: 130px;
+}
+
+.heroWhiteTopbtn {
+  margin-left: 5px;
+}
+
+.heroSectionTitle {
+  margin-top: 50px;
+  color: var(--secondaryWhiteColor);
+}
+
+.events .heroLinkWrap .chichaShow div:nth-child(1),
+.tourConcert .heroLinkWrap .chichaShow div:nth-child(1) {
+  margin-left: 100px;
+}
+
+.events .heroLinkWrap .chichaShow div:nth-child(5),
+.tourConcert .heroLinkWrap .chichaShow div:nth-child(3) {
+  margin-left: 230px;
+}
+
+.technical .heroLinkWrap .chichaShow div:nth-child(1) {
+  margin-left: 100px;
+}
+
+.technical .heroLinkWrap .chichaShow div:nth-child(3) {
+  margin-left: 250px;
+}
+
+.heroTitleWidth {
+  width: 80%;
+}
+
+.heroTextWidth {
+  width: 180px;
+  display: grid;
+  gap: clamp(10px, 1vw, 15px);
+}
+
+.heroLinkWrap {
+  margin-top: 40px;
+}
+
+.heroLinkLeft {
+  width: 32%;
+}
+
+.heroLinkLeft1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.heroLinkRight {
+  width: 66%;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+@media (max-width: 1330px) {
+  .technical .heroLinkWrap .chichaShow div:nth-child(1) {
+    margin-left: 0px;
+  }
+
+  .technical .heroLinkWrap .chichaShow div:nth-child(3) {
+    margin-left: 0px;
+  }
+}
+
+@media(max-width: 1385px) {
+  .heroTitleWidth {
+    width: 100%;
+  }
+
+  .heroTextWidth {
+    margin-top: 30px;
+  }
+
+  .events .heroLinkWrap .chichaShow div:nth-child(1),
+  .tourConcert .heroLinkWrap .chichaShow div:nth-child(1) {
+    margin-left: 0px;
+  }
+
+  .events .heroLinkWrap .chichaShow div:nth-child(5),
+  .tourConcert .heroLinkWrap .chichaShow div:nth-child(3) {
+    margin-left: 0px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .heroBg img {
+    right: 100px;
+  }
+
+}
+
+@media(max-width: 991px) {
+  .heroBg img {
+    right: 60px;
+    height: 80%;
+  }
+}
+
+@media(max-width: 768px) {
+
+  .heroBg img {
+    right: 0px;
+  }
+
+  .heroWhiteTopbtn {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroLinkWrap {
+    margin-top: 30px;
+    flex-direction: column-reverse;
+  }
+
+  .heroLinkLeft {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .heroLinkRight {
+    width: 100%;
+  }
+}
+
+@media(max-width: 500px) {
+  .visualization .heroLinkWrap .chichaHidden div:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .heroBg img {
+    height: 65%;
+    right: 0px;
+  }
+}

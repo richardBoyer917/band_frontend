@@ -1,0 +1,111 @@
+.videoCard {
+  width: clamp(176px, 30vw, 227px);
+  /* height: clamp(242px, 30vw, 322px); */
+  text-align: center;
+  background: transparent;
+}
+
+.videoActionArea p {
+  color: var(--secondaryWhiteColor);
+  letter-spacing: -0.03em;
+  margin: clamp(26px, 2.5vw, 32px) 0 15px 0;
+}
+
+.videoActionArea button {
+  background: transparent;
+  color: var(--secondaryWhiteColor);
+  border: none;
+  text-decoration: underline;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+}
+
+.circleVideoWrap {
+  position: relative;
+}
+
+.circleVideo {
+  width: 100%;
+  height: clamp(176px, 30vw, 227px);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circleVideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoPlayIcon {
+  width: 49px;
+  height: 49px;
+  background: var(--secondaryWhiteColor);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: clamp(15px, 2.5vw, 30px);
+  bottom: -5px;
+}
+
+.textCard {
+  position: relative;
+  background: var(--secondaryWhiteColor);
+  width: clamp(240px, 35vw, 400px);
+  height: clamp(247px, 35vw, 256px);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.textCard p {
+  margin-top: 10px;
+  color: var(--primaryBgColor);
+  letter-spacing: -0.03em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.textCardTop {
+  display: flex;
+  align-items: center;
+}
+
+.textCardTop img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.textCardTop div {
+  margin-left: 20px;
+  color: var(--primaryBgColor);
+  letter-spacing: -0.03em;
+}
+
+.fade-text {
+  width: 369px;
+  height: 110px;
+  margin-top: 25px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    180deg,
+    black 40%,
+    rgba(0, 0, 0, 0.5) 70%,
+    transparent 100%
+  );
+  color: var(--primaryBgColor);
+}
+
+.swiperGeer {
+  width: clamp(100px, 35vw, 165px);
+  height: clamp(98px, 35vw, 167px);
+}
+
+@media (max-width: 600px) {
+  .fade-text {
+    width: 252px;
+    height: 126px;
+    margin-top: 23px;
+  }
+}

@@ -1,0 +1,62 @@
+.policyTopLine {
+  border-bottom: 1px solid #404040;
+  border-radius: 0px;
+  padding-bottom: clamp(20px, 2.5vw, 35px);
+  margin-bottom: clamp(10px, 2vw, 20px);
+  color: #f9f9f9;
+}
+
+.policyAccordion {
+  display: grid;
+  gap: clamp(10px, 1.5vw, 25px);
+}
+
+.policyAccordion div {
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #f9f9f9;
+}
+
+.policyAccordionLine {
+  border-bottom: 1px solid #404040;
+  border-radius: 0px;
+}
+
+.policyAccordionGap {
+  display: grid;
+  gap: clamp(10px, 1.5vw, 25px);
+}
+
+.policyAddIcon {
+  width: clamp(20.86px, 2.5vw, 28.28px);
+}
+
+.policyAccordionTxt {
+  padding-bottom: 30px !important;
+  display: grid;
+  gap: clamp(10px, 1.5vw, 25px);
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordionContent {
+  padding: 10px 0;
+  display: block;
+  animation: expand 0.3s ease-out;
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}

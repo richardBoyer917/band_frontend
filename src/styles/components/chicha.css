@@ -1,0 +1,95 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes back-spin {
+  from {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+.chicha-spin {
+  animation: spin 3s linear infinite;
+  display: inline-block;
+}
+
+.chicha-back-spin {
+  animation: back-spin 3s linear infinite;
+  display: inline-block;
+}
+
+.treeChichas {
+  position: absolute;
+  display: flex;
+  right: -5px;
+  top: -55px;
+  border-bottom-left-radius: 50px;
+  background-color: var(--primaryBgColor);
+  padding: 0 30px 20px 34px;
+}
+
+.treeChichas1 {
+  position: absolute;
+  display: flex;
+  left: -5px;
+  top: -55px;
+  border-bottom-right-radius: 50px;
+  background-color: var(--primaryBgColor);
+  padding: 0 30px 20px 34px;
+}
+
+.heroTwoChichas {
+  left: -1px;
+  bottom: -45px;
+  width: 250px;
+  border-radius: 0 65px 0 0;
+  background-color: var(--primaryBgColor);
+  padding-top: 10px;
+}
+
+.oneChicha {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px 5px clamp(15px, 3vw, 20px) clamp(15px, 3vw, 20px); */
+  right: clamp(-10px, 2vw, -15px);
+  top: clamp(-10px, 2vw, -15px);
+  border-bottom-left-radius: 25px;
+  background-color: var(--primaryBgColor);
+}
+
+.chichaHidden {
+  display: none !important;
+}
+
+@media screen and (max-width: 1080px) {
+  .smallBoxSquare {
+    right: 50px !important;
+  }
+
+  .smallBoxSquare1 {
+    right: 0px !important;
+    top: 50px !important;
+  }
+
+  .chichaShow {
+    display: none !important;
+  }
+
+  .chichaHidden {
+    display: flex !important;
+  }
+}

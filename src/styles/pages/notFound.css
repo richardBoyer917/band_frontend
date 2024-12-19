@@ -1,0 +1,8 @@
+.notFound {
+    display: flex;
+    flex-direction: column;
+    color: #f9f9f9;
+    align-items: center;
+    text-align: center;
+    gap: clamp(20px, 4vw, 60px);
+}

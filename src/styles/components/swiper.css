@@ -1,0 +1,14 @@
+.swiperTitle {
+  color: var(--secondaryWhiteColor);
+  letter-spacing: -0.03em;
+}
+
+.swiperAuto {
+  width: auto !important;
+}
+
+.swiperGeer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

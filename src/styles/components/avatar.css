@@ -1,0 +1,5 @@
+.smallAvatar {
+    width: 59px;
+    height: 59px;
+    object-fit: cover;
+}

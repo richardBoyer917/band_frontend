@@ -1,0 +1,217 @@
+/* showplant */
+
+.chichaPlant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 39.33%;
+}
+
+.chichaPlant1 {
+  width: 30.33%;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: block;
+}
+
+.imgWrapper {
+  position: relative;
+  z-index: 50;
+}
+
+.lampChicha {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(152.28px, 20vw, 278.7px);
+  height: clamp(152.31px, 20vw, 278.67px);
+}
+
+.lampChichaUser {
+  width: clamp(107px, 14vw, 198px);
+  height: clamp(107px, 15vw, 198px);
+}
+
+.imgWrapper img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.imgBorder {
+  position: absolute;
+  width: clamp(90px, 12vw, 176.46px);
+  height: clamp(90px, 12vw, 176.46px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: solid 4px white;
+  border-radius: 50%;
+}
+
+.showConceptsm {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(20px, 3vw, 30px);
+  font-weight: 400;
+  color: var(--secondaryWhiteColor);
+  padding: clamp(16px, 1vw, 24px) 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 50;
+}
+
+.showConceptBasis {
+  font-size: clamp(14px, 2vw, 24px);
+  color: var(--secondaryWhiteColor);
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 50;
+}
+
+.questionButtonGroup1 {
+  display: none;
+  position: relative;
+  z-index: 50;
+}
+
+.plantShowTopics {
+  gap: clamp(50px, 6vw, 62px);
+  color: var(--secondaryWhiteColor);
+}
+
+.teamLink {
+  color: var(--secondaryWhiteColor);
+  font-weight: 600;
+}
+
+.plantTopicsItem {
+  width: 236px;
+  display: grid;
+  gap: clamp(7px, 2vw, 10px);
+  font-weight: 300;
+}
+
+.inviteSec {
+  position: relative;
+  background: var(--secondaryWhiteColor);
+  border-radius: 10px;
+  padding: 45px 0px 40px 63px;
+  margin-top: 30px;
+}
+
+.inviteSec div {
+  display: flex;
+  align-items: center;
+}
+
+.inviteSec p {
+  color: var(--primaryBgColor);
+}
+
+.inviteTitle img {
+  padding-right: 16px;
+}
+
+.inviteImg1 {
+  width: 121px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.inviteImg2 {
+  max-width: clamp(165px, 12vw, 172px);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+
+.inviteSecBtnT {
+  margin-top: 20px;
+}
+
+.inviteSecBtnT p {
+  max-width: clamp(500px, 50vw, 751px);
+  padding-left: clamp(5px, 3vw, 40px);
+}
+
+@media screen and (max-width: 1356px) {
+  .inviteSecBtnT p {
+    line-height: clamp(19.6px, 1vw, 25.2px) !important;
+  }
+
+  .inviteImg2 {
+    right: 65px;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .inviteSec img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .inviteSecBtnT {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .inviteSecBtnT p {
+    padding: 0;
+  }
+
+  .inviteSec {
+    padding: 30px 15px 30px 30px;
+  }
+
+  .inviteSecBtnT button {
+    margin-top: 30px;
+  }
+
+  .inviteSec div {
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .plantShowTopics {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+  }
+
+  .plantShowTopics p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1245px) {
+  .questionButtonGroup1 {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(5px, 3vw, 50px);
+    margin: 30px 0;
+  }
+
+  .chichaPlant {
+    order: -1;
+  }
+
+  .chichaPlant1 {
+    display: none;
+  }
+
+  .showConceptsm {
+    margin: 40px 0 0 0;
+  }
+}

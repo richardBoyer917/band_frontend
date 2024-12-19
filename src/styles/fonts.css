@@ -1,0 +1,332 @@
+* {
+  font-family: Mulish, sans-serif;
+}
+
+.darkColor {
+  color: var(--primaryBgColor);
+}
+
+.whiteColor {
+  color: var(--secondaryWhiteColor);
+}
+
+.menuBar {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(14px, 2vw, 12px);
+  line-height: clamp(16.87px, 1.5vw, 14.46px);
+  letter-spacing: -0.01rem;
+}
+
+.mediumTitle {
+  font-weight: 700;
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: clamp(25.1px, 2vw, 30.12px);
+}
+
+
+.x12 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.06px;
+}
+
+.x12_2 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.06px;
+  letter-spacing: -0.01rem;
+}
+
+.x12_4 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.06px;
+}
+
+
+.x12_3 {
+  font-size: 12px;
+  line-height: 14.46px;
+}
+
+.x12_5 {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  line-height: 16.8px;
+}
+
+.x12Font {
+  font-family: Russo One, sans-serif;
+  font-size: 12px;
+  line-height: clamp(22.4px, 2vw, 16.8px);
+}
+
+.x12Font_1 {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(16px, 1.5vw, 12px);
+  line-height: clamp(22.4px, 2vw, 16.8px);
+}
+
+.x14 {
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: clamp(-0.05em, 1vw, -0.01em);
+}
+
+.x14_1 {
+  font-size: 14px;
+  line-height: 15.06px;
+  letter-spacing: -0.01rem;
+}
+
+.x14_2 {
+  font-size: clamp(12px, 1.2vw, 14px);
+  line-height: clamp(16.8px, 1.5vw, 19.6px);
+}
+
+.x14_3 {
+  font-size: 14px;
+  line-height: 17.57px;
+  letter-spacing: -0.01rem;
+  font-weight: 500;
+}
+
+.x15 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18.83px;
+}
+
+.x15_1 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18.83px;
+  letter-spacing: -0.01rem;
+}
+
+.x16 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.08px;
+  letter-spacing: -0.01rem;
+}
+
+.x16_2 {
+  font-family: Russo One, sans-serif;
+  font-size: 16px;
+  line-height: 19.28px;
+}
+
+.x16Font {
+  font-weight: 700;
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: clamp(17.57px, 2vw, 20.08px);
+  letter-spacing: clamp(-0.05rem, 1vw, -0.01rem);
+}
+
+.x16Font_2 {
+  font-weight: 700;
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: clamp(19.6px, 2vw, 20.08px);
+  letter-spacing: -0.01rem;
+}
+
+.x16Font_3 {
+  font-weight: 400;
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: clamp(19.6px, 2vw, 20.08px);
+  letter-spacing: -0.01rem;
+}
+
+.x16Font_4 {
+  font-family: Russo One, sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 1.8vw, 16px);
+  line-height: clamp(14.46px, 2vw, 19.28px);
+}
+
+.x16Font_5 {
+  font-weight: 700;
+  font-size: clamp(12px, 1.5vw, 16px);
+  line-height: clamp(15.06px, 2vw, 20.08px);
+  letter-spacing: clamp(-0.03rem, 1vw, -0.01rem);
+}
+
+.x18 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.59px;
+  letter-spacing: -0.01rem;
+}
+
+.x18_2 {
+  font-size: 18px;
+  line-height: 25.2px;
+  letter-spacing: -0.01rem;
+}
+
+.x18_3 {
+  /* font-weight: clamp(500, 40%, 400); */
+  font-size: clamp(10px, 2vw, 18px);
+  line-height: clamp(12.55px, 2vw, 22.59px);
+  letter-spacing: clamp(-0.03em, 1vw, -0.01em);
+}
+
+.x18Font {
+  font-size: clamp(12px, 1vw, 18px);
+  line-height: clamp(15.06px, 1vw, 25.2px);
+}
+
+.x18Font_2 {
+  font-size: clamp(14px, 1.5vw, 18px);
+  line-height: clamp(19.6px, 1.8vw, 25.2px);
+  letter-spacing: clamp(-0.03rem, 1vw, -0.01rem);
+  text-align: left;
+}
+
+.x18Font_3 {
+  font-size: clamp(10px, 1.5vw, 18px);
+  line-height: clamp(12.55px, 2vw, 25.2px);
+  text-align: left;
+}
+
+.x18Font_4 {
+  font-size: clamp(14px, 1.5vw, 18px);
+  line-height: clamp(19.6px, 2vw, 25.2px);
+  text-align: left;
+  letter-spacing: clamp(-0.03rem, 1vw, -0.01rem);
+}
+
+.x18Font_5 {
+  font-size: clamp(14px, 1.5vw, 18px);
+  line-height: clamp(19.6px, 2vw, 25.2px);
+  text-align: left;
+  letter-spacing: clamp(-0.05em, 1vw, -0.03em);
+}
+
+.x20 {
+  font-family: Russo One, sans-serif;
+  font-size: 20px;
+  line-height: 24.1px;
+}
+
+.x20Font_1 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+.x20Font {
+  font-size: clamp(14px, 2vw, 20px);
+  line-height: clamp(19.6px, 2vw, 28px);
+  letter-spacing: clamp(-0.05rem, 1vw, -0.01rem);
+}
+
+.x24Font_1 {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(20px, 2vw, 24px);
+  line-height: clamp(24.1px, 2.5vw, 28.92px);
+}
+
+.x24Font_2 {
+  font-weight: 700;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: clamp(22.59px, 2.5vw, 30.12px);
+}
+
+.x24Font_3 {
+  font-weight: 700;
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: clamp(20.08px, 2.5vw, 30.12px);
+}
+
+.x24Font_4 {
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 24px);
+  line-height: clamp(19.6px, 2.5vw, 30.12px);
+}
+
+.x24Font_5 {
+  font-size: clamp(12px, 2vw, 24px);
+  line-height: clamp(15.06px, 2.5vw, 30.12px);
+}
+
+.x30 {
+  font-family: Russo One, sans-serif;
+  font-size: 30px;
+  line-height: 36.15px;
+  letter-spacing: -0.03em;
+}
+
+.x30Font {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(20px, 3vw, 30px);
+  line-height: clamp(24.1px, 3vw, 36.15px);
+}
+
+.x30Font_2 {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(27px, 3vw, 30px);
+  line-height: clamp(33.74px, 3vw, 36.15px);
+}
+
+.x35Font {
+  font-size: clamp(14px, 2vw, 35px);
+  line-height: clamp(17.57, 2vw 43.93px);
+  letter-spacing: -0.05rem;
+}
+
+.x72 {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(30px, 5vw, 72px);
+  line-height: clamp(36.15px, 5vw, 86.76px);
+  text-align: center;
+}
+
+.x78 {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(30px, 6vw, 78px);
+  line-height: clamp(36.15px, 7vw, 93.99px);
+  text-align: center;
+}
+
+.x300 {
+  font-family: Russo One, sans-serif;
+  font-size: clamp(151.34px, 30vw, 299.82px);
+  line-height: clamp(150.36px, 25vw, 230.28px);
+}
+
+.casesTitle {
+  width: 86px;
+  height: 21px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #F9F9F9;
+
+}
+
+.casesNum {
+  width: 86px;
+  height: 21px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #686868;
+
+}
+
+.processListTitle {
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 700;
+  color: #151515;
+  letter-spacing: -0.01em;
+  line-height: clamp(21px, 2.5vw, 25.2px);
+}

@@ -1,0 +1,208 @@
+.desktop-nav {
+  padding-left: 10px;
+}
+
+.menus {
+  margin: clamp(0px, 1.5vw, 18px) 0
+}
+
+.desktop-nav .menus {
+  list-style: none;
+}
+
+.desktop-nav .menu-items {
+  position: relative;
+}
+
+.desktop-nav .menu-items a {
+  display: block;
+  color: var(--secondaryWhiteColor);
+  text-decoration: none;
+  font-family: "Russo One";
+  font-size: 12px;
+  line-height: 14.46px;
+}
+
+.desktop-nav .menu-items a:hover {
+  text-decoration: underline;
+}
+
+.desktop-nav .menu-items button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  color: var(--secondaryWhiteColor);
+  font-family: "Russo One";
+  font-size: 12px;
+  line-height: 14.46px;
+  letter-spacing: -0.03em;
+  border: none;
+  cursor: pointer;
+}
+
+.desktop-nav .menu-items button:hover {
+  text-decoration: underline;
+}
+
+.desktop-nav .menu-items>a,
+.desktop-nav .menu-items button {
+  text-align: left;
+  padding: 0.7rem 1rem;
+}
+
+.desktop-nav .dropdown {
+  position: absolute;
+  right: 0;
+  left: 0px;
+  z-index: 9999;
+  min-width: 200px;
+  padding: 0.5rem 0;
+  list-style: none;
+  background-color: var(--primaryBgColor);
+  border-radius: 0.5rem;
+  display: none;
+  border: 1px solid #3f3f3f;
+}
+
+.desktop-nav .dropdown .dropdown-submenu {
+  position: absolute;
+  left: 100%;
+  top: -7px;
+}
+
+@media screen and (max-width: 1000px){
+  .admin-mobile-nav {
+    display: block;
+  }
+
+  .admin-mobile-nav .admin-menus{
+    list-style: none;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    z-index: 9999;
+    min-width: 120px;
+    padding: 10px 30px;
+    background-color: var(--primaryBgColor);
+    border-radius: 0.5rem;
+    border: 1px solid #3f3f3f;
+  }
+
+  .admin-menu-items a{
+    display: block;
+    font-family: "Russo One";
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: var(--secondaryWhiteColor);
+    text-decoration: none;
+  }
+
+  .admin-menu-items a:hover {
+    text-decoration: underline;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav .menus {
+    list-style: none;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    z-index: 9999;
+    min-width: 12rem;
+    padding: 0.5rem 0;
+    background-color: var(--primaryBgColor);
+    border-radius: 0.5rem;
+    border: 1px solid #3f3f3f;
+  }
+
+  .mobile-nav .menu-items a {
+    display: block;
+    font-family: "Russo One";
+    font-size: 12px;
+    line-height: 14.46px;
+    letter-spacing: -0.03em;
+    color: var(--secondaryWhiteColor);
+    text-decoration: none;
+  }
+
+  .mobile-nav .menu-items a:hover {
+    text-decoration: underline;
+  }
+
+  .mobile-nav .menu-items button {
+    display: flex;
+    align-items: center;
+    font-family: "Russo One";
+    font-size: 12px;
+    line-height: 14.46px;
+    letter-spacing: -0.03em;
+    color: var(--secondaryWhiteColor);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .mobile-nav .menu-items button:hover {
+    text-decoration: underline;
+  }
+
+  .mobile-nav .menu-items>a,
+  .mobile-nav .menu-items button {
+    text-align: left;
+    padding: 0.7rem 1rem;
+  }
+
+  .mobile-nav .arrow::after {
+    content: "";
+    display: inline-block;
+    margin-left: 1.2em;
+    vertical-align: 0.09em;
+    border-top: 0.42em solid;
+    border-right: 0.32em solid transparent;
+    border-left: 0.32em solid transparent;
+  }
+
+  .mobile-nav .arrow-close::after {
+    content: "";
+    display: inline-block;
+    margin-left: 1.2em;
+    vertical-align: 0.09em;
+    border-bottom: 0.42em solid;
+    border-right: 0.32em solid transparent;
+    border-left: 0.32em solid transparent;
+  }
+
+  .mobile-nav .dropdown {
+    margin-left: 1.2em;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    list-style: none;
+    display: none;
+  }
+
+  .mobile-nav .dropdown.show {
+    display: block;
+  }
+
+  .headerWrapper .rectButton {
+    display: none !important;
+  }
+}
+
+@media(max-width: 600px) {
+  .mobile-nav .menus {
+    top: 60px;
+  }
+
+  .admin-mobile-nav .admin-menus{
+    top: 50px;
+  }
+}

@@ -1,0 +1,223 @@
+.auditoriumLeft {
+  position: relative;
+  background-color: var(--auditoriumColor);
+  width: 638px;
+  height: clamp(154px, 35vw, 483px);
+  border-radius: 10px;
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+}
+
+.auditoriumLeftTitle {
+  font-family: "Inter";
+  font-size: 20px;
+  color: #151515;
+  letter-spacing: -0.01em;
+}
+
+.auditoriumRight {
+  width: 440px;
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+}
+
+.audiSmallWrap {
+  margin-top: 20px;
+}
+
+.audiBoldTextWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.audiBoldTextWrap p {
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  color: var(--primaryBgColor);
+}
+
+.audiSmallTextWrap {
+  display: flex;
+  margin-top: 10px;
+}
+
+.audiSmallTextWrap p {
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  color: var(--secondaryWhiteHover);
+}
+
+.audiSmallText {
+  margin-left: clamp(55px, 8vw, 120px);
+}
+
+.threeRotationImg {
+  width: clamp(52px, 15vw, 144px);
+  height: clamp(52px, 15vw, 144px);
+}
+
+.sceneTitleWrap {
+  display: flex;
+  align-items: center;
+}
+
+.questionImg {
+  width: clamp(13px, 2vw, 17px);
+  height: clamp(13px, 2vw, 17px);
+}
+
+.sceneList {
+  display: flex;
+  align-items: center;
+}
+
+.sceneListHr {
+  border: 1px solid var(--secondaryWhiteHover);
+  margin: 16px 0;
+}
+
+.graySceneText {
+  font-size: clamp(10px, 1vw, 12px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--secondaryWhiteHover);
+}
+
+.eleBoldText {
+  margin-top: clamp(5px, 1vw, 10px);
+}
+
+.eleHr {
+  margin: clamp(15px, 3vw, 30px) 0;
+  border: 1px solid var(--secondaryWhiteHover);
+}
+
+.userListAvatar {
+  width: 155px;
+  height: 155px;
+}
+
+.userListTitle {
+  margin: 26px 0 16px 0;
+  color: var(--secondaryWhiteColor);
+  cursor: pointer;
+}
+
+.userListLink {
+  color: var(--secondaryWhiteColor);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.userListWrapper {
+  text-align: center;
+  gap: clamp(50px, 8vw, 99px);
+}
+
+.seeMoreButton {
+  display: none;
+  margin-top: 50px;
+}
+
+.rentalBody {
+  margin-top: clamp(30px, 5vw, 50px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.rentalLeft {
+  width: 45%;
+}
+
+.rentalRight {
+  width: 46%;
+}
+
+.rentalRightTextSquare .cardTitle {
+  width: 430px;
+}
+
+
+@media(max-width: 1350px) {
+  .audiTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .audiBoldTextWrap {
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .audiBoldText {
+    margin-top: 20px;
+  }
+
+  .audiSmallTextWrap {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .audiSmallText {
+    margin: 25px 0 0 0;
+  }
+}
+
+@media(max-width: 1080px) {
+
+  .rentalBody {
+    flex-direction: column;
+  }
+
+  .rentalLeft,
+  .rentalRight,
+  .rentalRightTextSquare .cardTitle {
+    width: 100%;
+  }
+
+  .rentalRightTextSquare .cardTitle {
+    margin-top: 25px;
+  }
+
+}
+
+@media(max-width: 1050px) {
+
+  .auditoriumLeft {
+    width: 100%;
+  }
+
+  .auditoriumRight {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 589px) {
+  .userListAvatar {
+    width: 176px;
+    height: 176px;
+  }
+
+  .userListWrapper {
+    justify-content: center !important;
+  }
+
+  .seeMoreButton {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 500px) {
+  .audiBoldTextWrap p {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .audiSmallTextWrap p {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,313 @@
+.pendingCard {
+  max-width: 559px;
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+}
+
+.pendingCardContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+.pendingCardContent .cardDescription {
+  max-width: 355px;
+  padding: 20px 0;
+}
+
+.publicationCard {
+  padding: 16px;
+  max-width: 371px;
+  background-color: var(--secondaryWhiteColor);
+  border-radius: 5px;
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+
+  color: var(--primaryBgColor);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.06px;
+  letter-spacing: -3%;
+}
+
+.publicationCard video {
+  height: clamp(189px, 20vw, 237px);
+}
+
+.pendingCard img,
+.publicationCard video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pendingCard img {
+  height: clamp(154px, 20vw, 290px);
+}
+
+.whitePlayImg {
+  width: clamp(55px, 5vw, 58px);
+  height: clamp(60px, 5vw, 66px);
+  position: absolute;
+  left: 44%;
+  top: 55px;
+  cursor: pointer;
+}
+
+.blogCard {
+  max-width: 403px;
+  width: 100%;
+  background-color: var(--secondaryWhiteColor);
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 5px;
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+}
+
+.blogCardItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textBlogCard {
+  display: grid;
+  gap: clamp(27px, 3vw, 42px);
+  color: #151515;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.59px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.textBlogCardImg {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.textBlogCardNumber {
+  color: #686868;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  letter-spacing: -0.03em;
+}
+
+.videoBlogCard {
+  display: grid;
+  gap: 23px;
+  color: var(--primaryBgColor);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.06px;
+  letter-spacing: -0.03em;
+}
+
+.videoBlogCardDescription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  letter-spacing: -0.01em;
+}
+
+.eventWorksCard {
+  width: 360px;
+  padding-bottom: clamp(0px, 3vw, 40px);
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+}
+
+.eventWorksCard img {
+  width: 100%;
+  height: clamp(210px, 21vw, 213px);
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.eventTitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25.2px;
+  color: white;
+}
+
+.equipmentCard {
+  width: 360px;
+}
+
+.equipmentCard .itemCenter {
+  /* position: relative; */
+  width: 360px;
+  height: 213px;
+  background-color: white;
+  border-radius: clamp(5px, 1vw, 10px);
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+}
+
+.equipmentCard .itemCenter img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: clamp(5px, 1vw, 10px);
+}
+
+.rentalBox {
+  max-width: 484px;
+  width: 100%;
+  /* height: 242px; */
+  background: #efefef;
+  flex: 1 1 auto;
+  transition: flex-basis 0.5s ease;
+  display: grid;
+  gap: clamp(20px, 4vw, 50px);
+  padding: clamp(18px, 3vw, 30px);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.auditoriumContentCard {
+  width: 100%;
+  padding: 18px 0;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.rentalCostDocCard {
+  margin-top: clamp(25px, 3.5vw, 40px);
+  display: grid;
+  gap: clamp(10px, 2vw, 13px);
+  color: #686868;
+}
+
+.docuText {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  line-height: 20.08px;
+}
+
+.caseCatalogCard {
+  position: relative;
+  width: 47.72%;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.caseCatalogCard img,
+.caseCatalogCard video {
+  cursor: pointer;
+}
+
+.caseCatalogTopic {
+  font-size: 16px;
+  font-family: Mulish, sans-serif;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+
+.caseCatalogType {
+  font-size: 14px;
+  font: Mulish;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #b5b5b5;
+}
+
+.caseCatalogAddress {
+  font-size: 12px;
+  font: Mulish;
+  font-weight: 700;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+
+.caseCatalogParagraph {
+  padding: 16px 0 12px 0;
+}
+
+.CaseCatalogIconAddress {
+  color: white;
+  display: flex;
+  justify-items: first baseline;
+  gap: 5px;
+  padding-top: 16px;
+  align-items: center;
+}
+
+.adminPermissionCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--secondaryWhiteColor);
+  box-sizing: border-box;
+  width: 141px;
+  height: 102px;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+
+@media (max-width: 850px) {
+  .caseCatalogTopic {
+    letter-spacing: -0.8px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .pendingCard {
+    width: 400px;
+  }
+
+  .blogCardItem {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .eventWorksCard {
+    padding-bottom: 0;
+  }
+
+  .pendingCard {
+    width: 100%;
+  }
+
+  .pendingCard img {
+    border-radius: 5px;
+  }
+
+  .pendingCardContent,
+  .pendingCardContent .cardDescription {
+    padding-top: 12px;
+  }
+
+  .equipmentCard .itemCenter {
+    width: 100%;
+  }
+
+  .equipmentCard .itemCenter img {
+    max-width: 90%;
+  }
+
+  .caseCatalogTopic {
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .caseCatalogCard {
+    width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+.chichaIndex {
+  position: absolute;
+  z-index: 5;
+}
+
+.outCircleSquare {
+  clip-path: polygon(0 0, 1.51% 17.36%, 6.03% 34.2%, 13.39% 49.99%, 23.39% 64.27%, 35.72% 76.6%, 49.99% 86.6%, 65.79% 93.96%, 82.63% 98.48%, 100% 100%, 0 100%);
+  /* background: red; */
+  background: var(--primaryBgColor);
+  position: absolute;
+}
+
+.heroOneChichas {
+  border-radius: 0 0 0 65px;
+  width: 94px;
+  height: 94px;
+  padding: 5px 5px 20px 20px;
+  background: var(--primaryBgColor);
+}
+
+.heroOneChicha {
+  border-radius: 0 0 0 55px;
+  background: var(--primaryBgColor);
+  width: 74px;
+  height: 74px;
+}
+
+.smallHeroOneChichas {
+  border-radius: 0 0 0 30px;
+  background: var(--primaryBgColor);
+  width: 50px;
+  height: 50px;
+}
+
+.smallHeroOneChicha {
+  border-radius: 0 0 0 30px;
+  background: var(--primaryBgColor);
+  width: 50px;
+  height: 50px;
+}

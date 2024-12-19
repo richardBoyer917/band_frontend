@@ -1,0 +1,47 @@
+.Vgap20px {
+    display: grid;
+    gap: 20px;
+}
+
+.videoImgSwiper {
+    background: var(--secondaryWhiteColor);
+    max-width: 558px !important;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.swiperGapWidth {
+    gap: 30px;
+    display: grid;
+}
+
+.videoImgSwiperWrapper {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.whiteMiddlePlayImg {
+    width: clamp(55px, 5vw, 58px);
+    height: clamp(60px, 5vw, 66px);
+    position: absolute;
+    left: 44%;
+    top: 35%;
+    cursor: pointer;
+}
+
+
+@media(max-width: 1000px) {
+    .videoImgSwiperWrapper {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 859px) {
+    .Vgap20px {
+        margin-top: 20px;
+    }
+}
