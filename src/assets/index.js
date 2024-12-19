@@ -223,7 +223,7 @@ import heroVideo1 from "../assets/video/heroVideo1.mp4"
 import heroVideo2 from "../assets/video/heroVideo2.mp4"
 
 //gallery
-import gallery1 from '../assets/gallery/gallery1.jpg'
+import uploadImage from "../assets/icon/uploadImage.png"
 
 export {
   //icons
@@ -430,5 +430,5 @@ export {
   darkDownloadIcon,
 
   //gallery
-  gallery1,
+  uploadImage,
 };

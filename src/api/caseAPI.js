@@ -33,7 +33,6 @@ export const insertCase = async (formdata) => {
         "Content-Type": "multipart/form-data",
       },
     });
-    console.log("response:", response.data)
     if (response.status !== 200) {
       throw new Error(`Unexpected response status: ${response.status}`);
     }
@@ -120,7 +119,7 @@ export const deleteTagCase = async (id,caseType) => {
 export const insertSolution = async (idd, formdata) => {
   try {
     const token = sessionStorage.getItem("token");
-    const response = await apiClient.post(`/blogs/solution`, formdata, {
+    const response = await apiClient.post(`/blogs/solution/${idd}`, formdata, {
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": "multipart/form-data",
