@@ -38,7 +38,12 @@ export const insertCase = async (formdata) => {
     }
     return response.data;
   } catch (err) {
-    handleError("Error inserting case:", err);
+    // Update this to handle duplicate name error
+    if (err.response && err.response.data && err.response.data.message === 'Name already exists') {
+      alert("Error: The blog name already exists. Please choose a different name.");
+    } else {
+      handleError("Error inserting case:", err);
+    }
   }
 };
 

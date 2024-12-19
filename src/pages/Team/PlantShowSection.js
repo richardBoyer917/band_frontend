@@ -38,28 +38,6 @@ const PlantShowSection = ({ team }) => {
               </div>
             </div>
           ))}
-          {/* <div>
-            <div
-              className="plantTopicsItem"
-              style={{ width: "70%", float: "left" }}
-            >
-              <p className="x24Font_1">#Патриотизм</p>
-              <p className="x18Font_4">
-                Мы гордимся нашей страной и всегда стараемся помогать -
-                обеспечивать концерты для наших героям, поддерживать русскую
-                культуру. Именно поэтому мы создали свой благотворительный
-                проект по восстановлению Храма всех Святых -{" "}
-                <a
-                  href="https://xn--80adkstanfhkcs0b.xn--p1ai/page53391439.html"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="teamLink"
-                >
-                  праздник «Суворочка»
-                </a>
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

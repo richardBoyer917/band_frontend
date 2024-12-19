@@ -73,7 +73,7 @@ const NewTeamTable = ({ id }) => {
                 }
               }, 300);
             } else {
-              navigate(`/${type}-one/${params.row.id}`);
+              navigate(`/team`);
             }
           };
     

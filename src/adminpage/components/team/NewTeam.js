@@ -55,7 +55,6 @@ const NewTeam = () => {
     }
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
@@ -63,7 +62,7 @@ const NewTeam = () => {
       ...formData, // Spread the current formData
       competencies: formData.competencies.filter(competency => competency), // Filter out any empty competencies if needed
     };
-    const request = Data && insertTeam(dataToSubmit)
+    const request = insertTeam(dataToSubmit)
 
     request.then((data) => {
       if(data && data.error){

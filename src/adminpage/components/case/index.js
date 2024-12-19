@@ -203,17 +203,21 @@ const NewCase = () => {
 
     const request = Data
       ? updateCase(Data?.id, newFormData)
-      : insertCase(newFormData)
+      : insertCase(newFormData);
 
     request.then((data) => {
-      if(data && data.error){
-        console.log(data.error)
+      if (data && data.error) {
+        if (data.error === 400 && data.message === 'Name already exists') {
+          alert(`Ошибка: Имя блога уже существует. Пожалуйста, выберите другое имя.`);
+        } else {
+          console.log(data.error);
+        }
       } else {
-        navigate("/admin/eventTable")
+        navigate("/admin/eventTable");
       }
     }).finally(() => {
-      setLoading(false)
-    })
+      setLoading(false);
+    });
   };
 
   return (
